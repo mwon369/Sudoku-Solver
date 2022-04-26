@@ -42,7 +42,7 @@ public class SudokuSolver {
 	public static int[] findEmptySpace(int[][] board) {
 
 		int[] emptyPosition = {board.length + 1, board.length + 1};
-		
+
 		for (int i = 0; i < board.length; i++) {
 			for (int j = 0; j < board.length; j++) {
 				if (board[i][j] == 0) {
@@ -98,7 +98,7 @@ public class SudokuSolver {
 					return true;
 				}
 				board[row][col] = 0; // set the current square back to 0 (i.e., empty), if the next recursive call
-									 // returns false
+				// returns false
 			}
 		}
 		return false;
